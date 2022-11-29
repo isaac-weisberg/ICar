@@ -29,7 +29,7 @@ class ViewController: NSViewController {
                     y: 0
                 ),
                 wheelCircumference: 50,
-                heading: 0,
+                heading: .pi / 2,
                 fl_wheel: ICWheel(
                     position: Vector2D(
                         x: -wheelLateralOffset,

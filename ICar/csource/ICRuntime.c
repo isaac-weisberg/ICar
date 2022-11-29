@@ -18,8 +18,8 @@ void icruntime_simulate(ICRuntime* this, double deltatime) {
     double heading = this->player1.heading;
     
     Vector2D deltaTranslation = {
-        distancePerDeltatime * cos(heading),
-        distancePerDeltatime * sin(heading)
+        distancePerDeltatime * sin(heading),
+        distancePerDeltatime * cos(heading)
     };
     
     Vector2D newPosition = icvector2d_add(this->player1.position, deltaTranslation);
